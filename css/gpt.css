@@ -95,3 +95,61 @@ textarea {
 .inner-card {
   display: flex;
 }
+
+.toggle {
+  background: var(--gray-900);
+  border-radius: 1rem;
+  display: flex;
+}
+
+.gpt-option {
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+}
+
+.content .table {
+  width: 13rem;
+  margin: .25rem;
+}
+
+.content .table .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.content .table .desc > div {
+  background: var(--gray-700);
+  border-radius: .3rem;
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  padding: .5rem .7rem;
+}
