@@ -1,0 +1,79 @@
+:root {
+  --gray-50: #f7f7f8;
+  --gray-100: #ececf1;
+  --gray-200: #d9d9e3;
+  --gray-300: #c5c5d2;
+  --gray-400: #acacbe;
+  --gray-500: #8e8ea0;
+  --gray-600: #565869;
+  --gray-700: #40414f;
+  --gray-800: #343541;
+  --gray-900: #202123;
+  --gray-950: #050509;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  color: white;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--gray-900);
+  width: 16.25rem;
+}
+
+main {
+  flex: 1;
+  background: var(--gray-800);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+textarea {
+  all: unset;
+  background: var(--gray-700);
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: .9rem;
+  font-size: 1rem;
+  width: 46rem;
+}
+
+.footer {
+  font-size: 0.7rem;
+  margin-top: .7rem;
+  color: var(--gray-300);
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.send-button {
+  position: absolute;
+  right: .8rem;
+  bottom: 1.2rem;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(25, 195, 125);
+  border-radius: .3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.send-icon {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
