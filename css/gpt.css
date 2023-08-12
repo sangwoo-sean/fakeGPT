@@ -21,9 +21,13 @@ body {
 .side-bar {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   background: var(--gray-900);
   width: 16.25rem;
+}
+.side-bar > div {
+  width: 90%;
 }
 
 main {
@@ -76,4 +80,18 @@ textarea {
   width: 16px;
   height: 16px;
   display: block;
+}
+
+.card {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card > div {
+  padding: 1rem;
+}
+
+.inner-card {
+  display: flex;
 }
