@@ -114,10 +114,27 @@
         </span>
       </div>
     </div>
-    <span class="footer">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 3 Version</span>
+    <span class="footer">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. <u>ChatGPT August 3 Version</u></span>
   </div>
 </main>
+<div id="modal" class="hidden">
+    <div class="container" style="word-wrap: break-word">
+      <label>Prepare Your Answer</label>
+      <textarea cols="5" rows="20" wrap="hard"></textarea>
+      <button style="margin-top: 1rem;" onclick="toggleModal(false);" type="button">OK</button>
+    </div>
+</div>
+<script>
+  const setting = document.querySelector("#setting");
+  const modal = document.querySelector("#modal");
+  setting.addEventListener("click", () => {
+    modal.classList.toggle("hidden");
+  })
 
+  function toggleModal(show) {
+    modal.classList.toggle("hidden", !show);
+  }
+</script>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
