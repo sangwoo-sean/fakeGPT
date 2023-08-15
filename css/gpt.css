@@ -16,6 +16,7 @@ body {
   display: flex;
   height: 100vh;
   color: white;
+  overflow: hidden;
 }
 
 .side-bar {
@@ -25,6 +26,7 @@ body {
   justify-content: space-between;
   background: var(--gray-900);
   width: 16.25rem;
+  font-size: .9rem;
 }
 .side-bar > div {
   width: 90%;
@@ -76,10 +78,10 @@ textarea {
 }
 
 .send-icon {
-  margin-top: 4px;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 16em;
   display: block;
+  font-size: 1.15rem;
 }
 
 .card {
@@ -98,18 +100,26 @@ textarea {
 
 .toggle {
   background: var(--gray-900);
-  border-radius: 1rem;
+  border-radius: .7rem;
   display: flex;
+  font-size: .9rem;
 }
 
 .gpt-option {
   width: 10rem;
-  height: 3rem;
+  height: 2.5rem;
   text-align: center;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gpt-option:first-child {
+  background-color: var(--gray-700);
+  border: 1px solid var(--gray-600);
+  border-radius: .5rem;
+  margin: .3rem;
 }
 
 .container {
@@ -120,12 +130,13 @@ textarea {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .subtitle {
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -134,8 +145,8 @@ textarea {
 }
 
 .content .table {
-  width: 13rem;
-  margin: .25rem;
+  width: 14rem;
+  margin: .5rem;
 }
 
 .content .table .head {
@@ -149,7 +160,29 @@ textarea {
 .content .table .desc > div {
   background: var(--gray-700);
   border-radius: .3rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   font-size: .8rem;
-  padding: .5rem .7rem;
+  padding: .8rem 1rem;
+}
+
+.head svg {
+  font-size: 1.5rem;
+}
+
+.new-badge {
+  /*rounded-md bg-yellow-200 px-1.5 py-0.5 text-xs font-medium uppercase text-gray-800*/
+  background-color: rgba(250,230,158,1);
+  padding: .125rem .375rem;
+  color: var(--gray-800);
+  border-radius: .375rem;
+  font-size: .75rem;
+}
+
+#setting {
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: var(--gray-800);
+  border-radius: .5rem;
 }
