@@ -64,7 +64,7 @@
       <svg width="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" stroke-width="2" class="h-4 w-4 ml-0.5 h-4 w-4 transition-colors sm:ml-0 group-hover/options:text-gray-500 !text-gray-500 -ml-2 group-hover/button:text-brand-purple"><path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clip-rule="evenodd"></path></svg>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="initial-box">
     <div class="title">ChatGPT</div>
     <div class="content">
       <div class="table">
@@ -102,6 +102,9 @@
       </div>
     </div>
   </div>
+  <div class="chat-box" style="display: none;">
+    chat-box
+  </div>
   <div class="input-box">
     <div style="position: relative; word-wrap: break-word;">
       <textarea id="query" type="text" placeholder="Send a message" rows="1"></textarea>
@@ -129,6 +132,8 @@
   const modal = document.querySelector("#modal");
   const send = document.querySelector("#send");
   const query = document.querySelector("#query");
+  const initialBox = document.querySelector("#initial-box");
+  const chatBox = document.querySelector("#chat-box");
 
   setting.addEventListener("click", () => {
     modal.classList.toggle("hidden");
@@ -145,6 +150,8 @@
   }
 
   send.addEventListener("click", () => {
+    initialBox.style.display = "none";
+    chatBox.style.display = "block";
     alert(query.value)
   })
 </script>
