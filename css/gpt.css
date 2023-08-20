@@ -284,3 +284,13 @@ textarea {
   height: 1.4rem;
   padding: 0.2rem;
 }
+
+.user-profile-image {
+  background: #1c441c;
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 100;
+}
