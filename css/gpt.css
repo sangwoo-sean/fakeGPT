@@ -39,7 +39,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
 }
 
 textarea {
@@ -77,6 +76,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .send-button {
@@ -118,6 +118,8 @@ textarea {
   border-radius: .7rem;
   display: flex;
   font-size: .9rem;
+  width: 22rem;
+  margin: auto;
 }
 
 .gpt-option {
@@ -147,7 +149,7 @@ textarea {
 .title {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
 }
 
 .subtitle {
@@ -219,4 +221,64 @@ textarea {
 
 .hidden {
   display: none;
+}
+
+#initial-box {
+  padding: 2rem;
+}
+
+#chat-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  font-size: .8rem;
+  border-bottom: 1px solid rgba(32,33,35,.5);
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.chat-card {
+  width: 100%;
+}
+
+.chat-card.gpt {
+  background: rgba(68,70,84,1);
+}
+
+.chat-card .inner {
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 45%;
+  padding: 1.8rem 0;
+}
+
+.chat-card .content {
+  flex: 1;
+}
+
+.chat-card .image {
+  margin-right: 2rem;
+  background: rgb(25, 195, 125);
+  border-radius: 5px;
+}
+.chat-card .image svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0.2rem;
 }
